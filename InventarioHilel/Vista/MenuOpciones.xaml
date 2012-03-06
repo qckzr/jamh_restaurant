@@ -1,0 +1,8 @@
+﻿<Window x:Class="InventarioHilel.Vista.MenuOpciones"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MenuOpciones" Height="300" Width="300">
+    <Grid>
+        <Label Content="tipoUsuario" Height="28" HorizontalAlignment="Left" Margin="207,12,0,0" Name="labelTipoUsuario" VerticalAlignment="Top" />
+    </Grid>
+</Window>
