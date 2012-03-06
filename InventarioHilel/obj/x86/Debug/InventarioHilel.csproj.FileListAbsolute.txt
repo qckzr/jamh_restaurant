@@ -1,0 +1,14 @@
+c:\users\user\documents\visual studio 2010\Projects\InventarioHilel\InventarioHilel\bin\Debug\InventarioHilel.exe
+c:\users\user\documents\visual studio 2010\Projects\InventarioHilel\InventarioHilel\bin\Debug\InventarioHilel.pdb
+c:\users\user\documents\visual studio 2010\Projects\InventarioHilel\InventarioHilel\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2010\Projects\InventarioHilel\InventarioHilel\obj\x86\Debug\InventarioHilel_MarkupCompile.cache
+c:\users\user\documents\visual studio 2010\Projects\InventarioHilel\InventarioHilel\obj\x86\Debug\InventarioHilel.g.resources
+c:\users\user\documents\visual studio 2010\Projects\InventarioHilel\InventarioHilel\obj\x86\Debug\InventarioHilel.Properties.Resources.resources
+c:\users\user\documents\visual studio 2010\Projects\InventarioHilel\InventarioHilel\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\user\documents\visual studio 2010\Projects\InventarioHilel\InventarioHilel\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\user\documents\visual studio 2010\Projects\InventarioHilel\InventarioHilel\obj\x86\Debug\InventarioHilel.exe
+c:\users\user\documents\visual studio 2010\Projects\InventarioHilel\InventarioHilel\obj\x86\Debug\InventarioHilel.pdb
+c:\users\user\documents\visual studio 2010\Projects\InventarioHilel\InventarioHilel\obj\x86\Debug\Vista\Login.baml
+c:\users\user\documents\visual studio 2010\Projects\InventarioHilel\InventarioHilel\obj\x86\Debug\Vista\Login.g.cs
+c:\users\user\documents\visual studio 2010\Projects\InventarioHilel\InventarioHilel\obj\x86\Debug\Vista\App.g.cs
+c:\users\user\documents\visual studio 2010\Projects\InventarioHilel\InventarioHilel\bin\Debug\System.Data.SQLite.dll
