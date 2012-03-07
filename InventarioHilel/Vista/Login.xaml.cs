@@ -42,6 +42,17 @@ namespace InventarioHilel.Vista
      
             
         }
+
+        private void b_cerrar_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+
+        }
+
+        private void b_cerrar_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            
+        }
 /*
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
