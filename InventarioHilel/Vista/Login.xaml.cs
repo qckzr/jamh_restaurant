@@ -25,6 +25,8 @@ namespace InventarioHilel.Vista
         public Login()
         {
             InitializeComponent();
+            WindowState = WindowState.Maximized;
+            WindowStyle = WindowStyle.None;
         }
 
         private void buttonIngresar_Click(object sender, RoutedEventArgs e)
