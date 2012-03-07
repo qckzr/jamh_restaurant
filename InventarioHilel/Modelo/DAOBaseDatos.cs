@@ -89,5 +89,21 @@ namespace InventarioHilel.Modelo
 
             Console.ReadLine();
         }
+
+
+        public Boolean insertar(String query)
+        {
+            conectar();
+            SQLiteCommand comando = new SQLiteCommand(query, conexion);
+    
+            int cantidad = comando.ExecuteNonQuery();
+            desconectar();
+            if (cantidad < 1)
+                return false;
+            else 
+                return true;
+
+
+        }
     }
 }
