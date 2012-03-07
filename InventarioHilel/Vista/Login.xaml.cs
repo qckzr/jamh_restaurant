@@ -29,7 +29,7 @@ namespace InventarioHilel.Vista
 
         private void buttonIngresar_Click(object sender, RoutedEventArgs e)
         {
-            if (Logica.getInstance().validarLogin(textBoxUsuario.Text, textBoxContrasena.Text) == true)
+            if (Logica.getInstance().validarLogin(textBoxUsuario.Text, textBoxContrasena.Password) == true)
             {
                 Window asd = new MenuOpciones();
                 asd.Visibility = Visibility.Visible;
