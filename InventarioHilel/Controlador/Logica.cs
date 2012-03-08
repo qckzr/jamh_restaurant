@@ -48,7 +48,7 @@ namespace InventarioHilel.Controlador
             {
                 DataRow user = a.Rows[0];
                 usuario = new Usuario(nick, (string)user["es_administrador"]);
-                usuario.registrarAccion(db, "Inicio Sesion", "");
+                usuario.registrarAccion(db, "Inicio Sesion", null);
                 return true;
             }
             else

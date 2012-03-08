@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\User\documents\visual studio 2010\Projects\InventarioHilel\InventarioHilel\Vista\App.xaml
-2920205036
+8147963835
 
-11299964384
+171599415483
 14-517183948
-Vista\Login.xaml;Vista\MenuOpciones.xaml;
+Vista\actualizarInventario.xaml;Vista\AdministrarProductos.xaml;Vista\AdministrarUsuarios.xaml;Vista\Alertas.xaml;Vista\ConsultarInventario.xaml;Vista\Login.xaml;Vista\MenuOpciones.xaml;Vista\MenuUsuario.xaml;
 
 False
 
