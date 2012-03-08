@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using DAOBaseDatos = InventarioHilel.Modelo.DAOBaseDatos;
 
 namespace InventarioHilel.Controlador
 {
@@ -30,6 +31,12 @@ namespace InventarioHilel.Controlador
         {
             get { return admin; }
             set { admin = value; }
+        }
+
+        public Boolean registrarAccion(DAOBaseDatos db, string mensaje, string producto)
+        {
+            DateTime tiempoActual = DateTime.Now;
+            return true;
         }
     }
 }
