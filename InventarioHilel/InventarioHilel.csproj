@@ -61,6 +61,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Controlador\Configuracion.cs" />
     <Compile Include="Controlador\Logica.cs" />
     <Compile Include="Vista\MenuOpciones.xaml.cs">
       <DependentUpon>MenuOpciones.xaml</DependentUpon>
