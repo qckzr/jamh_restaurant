@@ -33,6 +33,48 @@ namespace InventarioHilel.Vista
 
         }
 
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            Window asd = new MenuUsuario();
+            asd.Visibility = Visibility.Visible;
+            this.Visibility = Visibility.Collapsed;
+        }
+
+        private void b_ActualizarInventario_Click(object sender, RoutedEventArgs e)
+        {
+            Window asd = new actualizarInventario();
+            asd.Visibility = Visibility.Visible;
+            this.Visibility = Visibility.Collapsed;
+        }
+
+        private void b_consultarInventario_Click(object sender, RoutedEventArgs e)
+        {
+            Window asd = new ConsultarInventario();
+            asd.Visibility = Visibility.Visible;
+            this.Visibility = Visibility.Collapsed;
+        }
+
+        private void b_AdministrarUsurios_Click(object sender, RoutedEventArgs e)
+        {
+            Window asd = new AdministrarUsuarios();
+            asd.Visibility = Visibility.Visible;
+            this.Visibility = Visibility.Collapsed;
+        }
+
+        private void b_AdministrarProductos_Click(object sender, RoutedEventArgs e)
+        {
+            Window asd = new AdministrarProductos();
+            asd.Visibility = Visibility.Visible;
+            this.Visibility = Visibility.Collapsed;
+        }
+
+        private void b_alertas_Click(object sender, RoutedEventArgs e)
+        {
+            Window asd = new Alertas();
+            asd.Visibility = Visibility.Visible;
+            this.Visibility = Visibility.Collapsed;
+        }
+
         
      
     }

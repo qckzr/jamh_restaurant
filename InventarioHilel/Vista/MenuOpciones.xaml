@@ -5,14 +5,15 @@
     <Grid>
         <Label Content="Administrador" Height="40" HorizontalAlignment="Left" Margin="1182,83,0,0" Name="labelTipoUsuario" VerticalAlignment="Top" Width="150" FontSize="18" FontWeight="Normal" />
         <Image Height="32" HorizontalAlignment="Left" Margin="1146,85,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="30" Source="/InventarioHilel;component/Images/lock-icon.png" />
+
         <Image Height="87" HorizontalAlignment="Left" Margin="-10,648,0,0" Name="image3" Stretch="Fill" VerticalAlignment="Top" Width="1408" Source="/InventarioHilel;component/Images/bordecito.png" />
         <Label Content="Seleccione la opción que desea realizar:" Height="47" HorizontalAlignment="Left" Margin="375,118,0,0" Name="label1" VerticalAlignment="Top" Width="529" FontSize="28" FontWeight="Bold" />
-        <Button Content="Actualizar Inventario" Height="53" HorizontalAlignment="Left" Margin="313,254,0,0" Name="b_ActualizarInventario" VerticalAlignment="Top" Width="292" FontSize="20" FontWeight="Bold" />
-        <Button Content="Administrar Productos" FontSize="20" Height="53" HorizontalAlignment="Left" Margin="313,370,0,0" Name="b_AdministrarProductos" VerticalAlignment="Top" Width="292" FontWeight="Bold" />
-        <Button Content="Administrar Usuarios" FontSize="20" Height="53" HorizontalAlignment="Left" Margin="678,370,0,0" Name="b_AdministrarUsurios" VerticalAlignment="Top" Width="292" FontWeight="Bold" />
-        <Button Content="Consultar Inventario" FontSize="20" Height="53" HorizontalAlignment="Left" Margin="678,254,0,0" Name="b_consultarInventario" VerticalAlignment="Top" Width="292" FontWeight="Bold" />
-        <Button Content="Alertas" FontSize="20" Height="53" HorizontalAlignment="Left" Margin="494,480,0,0" Name="button5" VerticalAlignment="Top" Width="292" FontWeight="Bold" />
-        <Button Height="32" HorizontalAlignment="Left" Margin="1295,29,0,0" Name="b_cerrarAdmin" VerticalAlignment="Top" Width="37" Click="button1_Click_1">
+        <Button Content="Actualizar Inventario" Height="53" HorizontalAlignment="Left" Margin="313,254,0,0" Name="b_ActualizarInventario" VerticalAlignment="Top" Width="292" FontSize="20" FontWeight="Bold" Click="b_ActualizarInventario_Click" Cursor="Hand" />
+        <Button Content="Administrar Productos" FontSize="20" Height="53" HorizontalAlignment="Left" Margin="313,370,0,0" Name="b_AdministrarProductos" VerticalAlignment="Top" Width="292" FontWeight="Bold" Cursor="Hand" Click="b_AdministrarProductos_Click" />
+        <Button Content="Administrar Usuarios" FontSize="20" Height="53" HorizontalAlignment="Left" Margin="678,370,0,0" Name="b_AdministrarUsurios" VerticalAlignment="Top" Width="292" FontWeight="Bold" Cursor="Hand" Click="b_AdministrarUsurios_Click" />
+        <Button Content="Consultar Inventario" FontSize="20" Height="53" HorizontalAlignment="Left" Margin="678,254,0,0" Name="b_consultarInventario" VerticalAlignment="Top" Width="292" FontWeight="Bold" Cursor="Hand" Click="b_consultarInventario_Click" />
+        <Button Content="Alertas" FontSize="20" Height="53" HorizontalAlignment="Left" Margin="494,480,0,0" Name="b_alertas" VerticalAlignment="Top" Width="292" FontWeight="Bold" Cursor="Hand" Click="b_alertas_Click" />
+        <Button Height="37" HorizontalAlignment="Left" Margin="1295,29,0,0" Name="b_cerrarAdmin" VerticalAlignment="Top" Width="37" Click="button1_Click_1" Cursor="Hand">
             <Button.Background>
                 <ImageBrush ImageSource="/InventarioHilel;component/Images/Actions-application-exit-icon.png" />
             </Button.Background>
@@ -20,5 +21,6 @@
                 <ImageBrush ImageSource="/InventarioHilel;component/Images/Actions-application-exit-icon.png" />
             </Button.OpacityMask>
         </Button>
+        <Button Content="usuario" Height="35" HorizontalAlignment="Left" Margin="1146,151,0,0" Name="button1" VerticalAlignment="Top" Width="186" Click="button1_Click" Cursor="Hand" />
     </Grid>
 </Window>
