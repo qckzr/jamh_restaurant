@@ -91,14 +91,14 @@ namespace InventarioHilel.Modelo
         }
 
 
-        public Boolean insertar(String query)
+        public Boolean hacerQuery(String query)
         {
             conectar();
             SQLiteCommand comando = new SQLiteCommand(query, conexion);
     
             int cantidad = comando.ExecuteNonQuery();
             desconectar();
-            if (cantidad < 1)
+            if (cantidad < 1) //creo que esta verga es cuando se hace un insert solamente, mosca xD
                 return false;
             else 
                 return true;
