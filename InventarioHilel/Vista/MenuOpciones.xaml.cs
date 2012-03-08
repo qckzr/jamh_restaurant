@@ -21,6 +21,19 @@ namespace InventarioHilel.Vista
         public MenuOpciones()
         {
             InitializeComponent();
+            WindowState = WindowState.Maximized;
+            WindowStyle = WindowStyle.None;
+        
         }
+
+        private void button1_Click_1(object sender, RoutedEventArgs e)
+        {
+            
+            this.Close();
+
+        }
+
+        
+     
     }
 }
