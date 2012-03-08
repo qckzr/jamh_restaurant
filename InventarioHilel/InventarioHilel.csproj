@@ -40,6 +40,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.SQLite">
       <HintPath>archivos\System.Data.SQLite.dll</HintPath>
@@ -63,6 +64,7 @@
     </ApplicationDefinition>
     <Compile Include="Controlador\Configuracion.cs" />
     <Compile Include="Controlador\Logica.cs" />
+    <Compile Include="Controlador\Usuario.cs" />
     <Compile Include="Vista\MenuOpciones.xaml.cs">
       <DependentUpon>MenuOpciones.xaml</DependentUpon>
     </Compile>

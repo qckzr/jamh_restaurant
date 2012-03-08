@@ -43,3 +43,6 @@ C:\Users\Aileen\Documents\Visual Studio 2010\Projects\InventarioHilel\Inventario
 C:\Users\Aileen\Documents\Visual Studio 2010\Projects\InventarioHilel\InventarioHilel\obj\x86\Debug\InventarioHilel.Properties.Resources.resources
 C:\Users\Aileen\Documents\Visual Studio 2010\Projects\InventarioHilel\InventarioHilel\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Users\Aileen\Documents\Visual Studio 2010\Projects\InventarioHilel\InventarioHilel\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\User\documents\visual studio 2010\Projects\InventarioHilel\InventarioHilel\bin\Debug\InventarioHilel.exe.config
+C:\Users\User\documents\visual studio 2010\Projects\InventarioHilel\InventarioHilel\obj\x86\Debug\Vista\MenuOpciones.baml
+C:\Users\User\documents\visual studio 2010\Projects\InventarioHilel\InventarioHilel\obj\x86\Debug\Vista\MenuOpciones.g.cs

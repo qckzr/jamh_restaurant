@@ -13,9 +13,20 @@ namespace InventarioHilel.Controlador
 
         private static Logica instancia;
 
+        private Configuracion config;
+
+        private Usuario usuario;
+
         private Logica()
         {
-            db = new DAOBaseDatos("Data Source=../../archivos/bd.sqlite3;Version=3");
+            config = new Configuracion();
+            db = new DAOBaseDatos(config.BD);
+        }
+
+        public Usuario Usuario
+        {
+            get { return usuario; }
+            set { usuario = value; }
         }
 
         public static Logica getInstance()
@@ -33,8 +44,12 @@ namespace InventarioHilel.Controlador
         public Boolean validarLogin(String nick, String contrasena)
         {
             DataTable a = db.consultar("select * from usuario where nickname ='" + nick + "' and contrasena = '" + contrasena + "'");
-            if (a.Rows.Count> 0)
+            if (a.Rows.Count > 0)
+            {
+                DataRow user = a.Rows[0];
+                usuario = new Usuario(nick, (string)user["es_administrador"]);
                 return true;
+            }
             else
                 return false;
         }
@@ -50,7 +65,7 @@ namespace InventarioHilel.Controlador
             else
             {
                 db.hacerQuery(
-                    "update from fecha_productos set cantidadactual=cantidadactual-"+cantidad+"where id_producto="+idProducto" and fecha_vencimiento='"+fechaVencimiento+"'");
+                    "update from fecha_productos set cantidadactual=cantidadactual-"+cantidad+"where id_producto="+idProducto+" and fecha_vencimiento='"+fechaVencimiento+"'");
                 return true;
             }
 
