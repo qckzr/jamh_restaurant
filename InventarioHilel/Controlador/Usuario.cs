@@ -35,9 +35,13 @@ namespace InventarioHilel.Controlador
             set { admin = value; }
         }
 
-        public string obtenerIDBasedeDatos(DAOBaseDatos db)
+        public string obtenerIDBasedeDatos(DAOBaseDatos db, int tipo, string producto)
         {
-            string query = "select id from usuario where nickname='"+ nick+"'";
+            string query = "";
+            if (tipo == 0)
+                query = "select id from usuario where nickname='" + nick + "'";
+            else
+                query = "select id from producto where nombre = '"+ producto +"'";
             DataTable usuario = db.consultar(query);
             return usuario.Rows[0]["id"].ToString();
         }
@@ -47,12 +51,14 @@ namespace InventarioHilel.Controlador
             DateTime tiempoActual = DateTime.Now;
             string fecha = tiempoActual.Year + "-" + tiempoActual.Month + "-" + tiempoActual.Day;
             string hora = tiempoActual.Hour + ":" + tiempoActual.Minute + ":" + tiempoActual.Second;
-            string id = obtenerIDBasedeDatos(db);
+            string id = obtenerIDBasedeDatos(db,0,producto);
             string query = "";
             if (producto != null)
-                //ColocarID_producto
+            {
+                string idProducto = obtenerIDBasedeDatos(db, 1, producto);
                 query = "insert into log_historico(fecha, hora, id_usuario, id_producto,mensaje_accion) "
-                    + "values ('" + fecha + "','" + hora + "'," + id + ",colocarID,'" + mensaje + "')";
+                    + "values ('" + fecha + "','" + hora + "'," + id + "," + idProducto + ",'" + mensaje + "')";
+            }
             else
                 query = "insert into log_historico(fecha, hora, id_usuario, id_producto,mensaje_accion) "
                     + "values ('" + fecha + "','" + hora + "'," + id + ",NULL,'" + mensaje + "')";
