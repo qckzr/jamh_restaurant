@@ -4,17 +4,17 @@
 exe
 C#
 .cs
-C:\Users\User\documents\visual studio 2010\Projects\InventarioHilel\InventarioHilel\obj\x86\Debug\
+C:\Users\hector\Documents\Visual Studio 2010\Projects\InventarioHilel\InventarioHilel\obj\x86\Debug\
 InventarioHilel
 none
 false
 DEBUG;TRACE
-C:\Users\User\documents\visual studio 2010\Projects\InventarioHilel\InventarioHilel\Vista\App.xaml
-8147963835
+C:\Users\hector\Documents\Visual Studio 2010\Projects\InventarioHilel\InventarioHilel\Vista\App.xaml
+11-1464993859
 
-171599415483
-14-517183948
-Vista\actualizarInventario.xaml;Vista\AdministrarProductos.xaml;Vista\AdministrarUsuarios.xaml;Vista\Alertas.xaml;Vista\ConsultarInventario.xaml;Vista\Login.xaml;Vista\MenuOpciones.xaml;Vista\MenuUsuario.xaml;
+204623414
+142052902429
+Vista\actualizarInventario.xaml;Vista\AdministrarProductos.xaml;Vista\AdministrarUsuarios.xaml;Vista\AgregarInventario.xaml;Vista\Alertas.xaml;Vista\ConsultarInventario.xaml;Vista\DeducirInventario.xaml;Vista\EnvioInventario.xaml;Vista\Login.xaml;Vista\MenuOpciones.xaml;Vista\MenuUsuario.xaml;
 
 False
 

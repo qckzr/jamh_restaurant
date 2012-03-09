@@ -36,5 +36,20 @@ namespace InventarioHilel.Vista
         {
             this.Close();
         }
+
+        private void b_deducirInventario_Click(object sender, RoutedEventArgs e)
+        {
+            Window asd = new DeducirInventario();
+            asd.Visibility = Visibility.Visible;
+            this.Visibility = Visibility.Collapsed;
+        }
+
+        private void b_AgregarInventario_Click(object sender, RoutedEventArgs e)
+        {
+            Window asd = new AgregarInventario();
+            asd.Visibility = Visibility.Visible;
+            this.Visibility = Visibility.Collapsed;
+
+        }
     }
 }
