@@ -1,0 +1,29 @@
+﻿<Window x:Class="InventarioHilel.Vista.DeducirInventario"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="DeducirInventario" Height="768" Width="1388" Loaded="Window_Loaded">
+    <Grid>
+
+        <Image Height="69" HorizontalAlignment="Left" Margin="0,656,0,0" Name="image2" Stretch="Fill" VerticalAlignment="Top" Width="1439" Source="/InventarioHilel;component/Images/bordecito.png" Grid.RowSpan="2" Grid.Column="2" />
+        <Label Content="Administrador" FontSize="18" FontWeight="Normal" Height="40" HorizontalAlignment="Left" Margin="1204,67,0,0" Name="labelTipoUsuario" VerticalAlignment="Top" Width="150" />
+        <Image Height="32" HorizontalAlignment="Left" Margin="1168,69,0,0" Name="image1" Source="/InventarioHilel;component/Images/lock-icon.png" Stretch="Fill" VerticalAlignment="Top" Width="30" />
+        <Label Content="Deducir del inventario:" FontSize="28" FontWeight="Bold" Height="47" HorizontalAlignment="Left" Margin="527,69,0,0" Name="label1" VerticalAlignment="Top" Width="306" />
+        <Button Cursor="Hand" Height="37" HorizontalAlignment="Left" Margin="1317,13,0,0" Name="b_cerrarAdmin" VerticalAlignment="Top" Width="37" Click="b_cerrarAdmin_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/InventarioHilel;component/Images/Actions-application-exit-icon.png" />
+            </Button.Background>
+            <Button.OpacityMask>
+                <ImageBrush ImageSource="/InventarioHilel;component/Images/Actions-application-exit-icon.png" />
+            </Button.OpacityMask>
+        </Button>
+        <Label Content="Seleccionar fecha de vencimiento:" FontSize="28" FontWeight="Normal" Height="47" HorizontalAlignment="Left" Margin="98,413,0,0" Name="label2" VerticalAlignment="Top" Width="429" />
+        <Label Content="Seleccionar Producto:" FontSize="28" FontWeight="Normal" Height="47" HorizontalAlignment="Left" Margin="243,189,0,0" Name="label3" VerticalAlignment="Top" Width="286" />
+        <Label Content="Cantidad:" FontSize="28" FontWeight="Normal" Height="47" HorizontalAlignment="Left" Margin="384,501,0,0" Name="label4" VerticalAlignment="Top" Width="143" />
+        <ComboBox Height="47" HorizontalAlignment="Right" Margin="0,413,529,0" Name="cb_fechaVencimiento" VerticalAlignment="Top" Width="295" />
+        <ListBox Height="213" HorizontalAlignment="Left" Margin="544,162,0,0" Name="listBoxProductos" VerticalAlignment="Top" Width="293">
+            <ListBoxItem />
+        </ListBox>
+        <Rectangle Height="49" HorizontalAlignment="Left" Margin="542,499,0,0" Name="rectangle1" Stroke="Black" VerticalAlignment="Top" Width="233" />
+        <Button Content="Aceptar" Height="50" HorizontalAlignment="Left" Margin="542,583,0,0" Name="b_deducirInventario" VerticalAlignment="Top" Width="233" FontSize="26" />
+    </Grid>
+</Window>

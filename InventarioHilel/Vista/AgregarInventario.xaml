@@ -1,0 +1,28 @@
+﻿<Window x:Class="InventarioHilel.Vista.AgregarInventario"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AgregarInventario" Height="768" Width="1388" >
+    <Grid>
+        <Image Height="69" HorizontalAlignment="Left" Margin="0,656,0,0" Name="image2" Stretch="Fill" VerticalAlignment="Top" Width="1439" Source="/InventarioHilel;component/Images/bordecito.png" Grid.RowSpan="2" Grid.Column="2" />
+        <Label Content="Administrador" FontSize="18" FontWeight="Normal" Height="40" HorizontalAlignment="Left" Margin="1199,71,0,0" Name="labelTipoUsuario" VerticalAlignment="Top" Width="150" />
+        <Image Height="32" HorizontalAlignment="Left" Margin="1163,73,0,0" Name="image1" Source="/InventarioHilel;component/Images/lock-icon.png" Stretch="Fill" VerticalAlignment="Top" Width="30" />
+        <Label Content="Agregar al inventario:" FontSize="28" FontWeight="Bold" Height="47" HorizontalAlignment="Left" Margin="522,73,0,0" Name="label1" VerticalAlignment="Top" Width="306" />
+        <Button Cursor="Hand" Height="37" HorizontalAlignment="Left" Margin="1312,17,0,0" Name="b_cerrarAdmin" VerticalAlignment="Top" Width="37" Click="b_cerrarAdmin_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/InventarioHilel;component/Images/Actions-application-exit-icon.png" />
+            </Button.Background>
+            <Button.OpacityMask>
+                <ImageBrush ImageSource="/InventarioHilel;component/Images/Actions-application-exit-icon.png" />
+            </Button.OpacityMask>
+        </Button>
+        <Label Content="Seleccionar fecha de vencimiento:" FontSize="28" FontWeight="Normal" Height="47" HorizontalAlignment="Left" Margin="93,358,0,0" Name="label2" VerticalAlignment="Top" Width="429" />
+        <Label Content="Seleccionar Producto:" FontSize="28" FontWeight="Normal" Height="47" HorizontalAlignment="Left" Margin="234,206,0,0" Name="label3" VerticalAlignment="Top" Width="286" />
+        <Label Content="Cantidad:" FontSize="28" FontWeight="Normal" Height="47" HorizontalAlignment="Left" Margin="379,520,0,0" Name="label4" VerticalAlignment="Top" Width="143" />
+        <ListBox Height="154" HorizontalAlignment="Left" Margin="537,162,0,0" Name="listBoxProductos" VerticalAlignment="Top" Width="293">
+            <ListBoxItem />
+        </ListBox>
+        <Rectangle Height="39" HorizontalAlignment="Right" Margin="0,528,586,0" Name="rectangle1" Stroke="Black" VerticalAlignment="Top" Width="189" />
+        <Calendar Height="180" HorizontalAlignment="Left" Margin="576,342,0,0" Name="calendar1" VerticalAlignment="Top" Width="216" />
+        <Button Content="Aceptar" FontSize="26" Height="50" HorizontalAlignment="Left" Margin="591,587,0,0" Name="b_agregarInventario" VerticalAlignment="Top" Width="189" />
+    </Grid>
+</Window>

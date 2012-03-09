@@ -7,8 +7,8 @@
         <Label Content="Administrador" FontSize="18" FontWeight="Normal" Height="40" HorizontalAlignment="Left" Margin="1205,72,0,0" Name="labelTipoUsuario" VerticalAlignment="Top" Width="150" />
         <Image Height="32" HorizontalAlignment="Left" Margin="1169,74,0,0" Name="image1" Source="/InventarioHilel;component/Images/lock-icon.png" Stretch="Fill" VerticalAlignment="Top" Width="30" />
         <Label Content="Actualización del  Inventario:" FontSize="28" FontWeight="Bold" Height="47" HorizontalAlignment="Left" Margin="468,169,0,0" Name="label1" VerticalAlignment="Top" Width="385" />
-        <Button Content="Agregar al Inventario" FontSize="20" FontWeight="Bold" Height="53" HorizontalAlignment="Left" Margin="523,431,0,0" Name="b_AgregarInventario" VerticalAlignment="Top" Width="292" Cursor="Hand" />
-        <Button Content="Deducir del Inventario" FontSize="20" FontWeight="Bold" Height="53" HorizontalAlignment="Left" Margin="523,320,0,0" Name="b_deducirInventario" VerticalAlignment="Top" Width="292" Cursor="Hand" />
+        <Button Content="Agregar al Inventario" FontSize="20" FontWeight="Bold" Height="53" HorizontalAlignment="Left" Margin="523,431,0,0" Name="b_AgregarInventario" VerticalAlignment="Top" Width="292" Cursor="Hand" Click="b_AgregarInventario_Click" />
+        <Button Content="Deducir del Inventario" FontSize="20" FontWeight="Bold" Height="53" HorizontalAlignment="Left" Margin="523,320,0,0" Name="b_deducirInventario" VerticalAlignment="Top" Width="292" Cursor="Hand" Click="b_deducirInventario_Click" OpacityMask="#FFF4A413" />
         <Button Height="37" HorizontalAlignment="Left" Margin="1318,18,0,0" Name="b_cerrarActualizacion" VerticalAlignment="Top" Width="37" Click="b_cerrarActualizacion_Click" Cursor="Hand">
             <Button.Background>
                 <ImageBrush ImageSource="/InventarioHilel;component/Images/Actions-application-exit-icon.png" />

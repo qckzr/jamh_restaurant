@@ -74,11 +74,20 @@
     <Compile Include="Vista\AdministrarUsuarios.xaml.cs">
       <DependentUpon>AdministrarUsuarios.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Vista\AgregarInventario.xaml.cs">
+      <DependentUpon>AgregarInventario.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Vista\Alertas.xaml.cs">
       <DependentUpon>Alertas.xaml</DependentUpon>
     </Compile>
     <Compile Include="Vista\ConsultarInventario.xaml.cs">
       <DependentUpon>ConsultarInventario.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\DeducirInventario.xaml.cs">
+      <DependentUpon>DeducirInventario.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\EnvioInventario.xaml.cs">
+      <DependentUpon>EnvioInventario.xaml</DependentUpon>
     </Compile>
     <Compile Include="Vista\MenuOpciones.xaml.cs">
       <DependentUpon>MenuOpciones.xaml</DependentUpon>
@@ -98,11 +107,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Vista\AgregarInventario.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Vista\Alertas.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Vista\ConsultarInventario.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Vista\DeducirInventario.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Vista\EnvioInventario.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
