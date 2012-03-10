@@ -10,22 +10,22 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Windows.Navigation;
 
 namespace InventarioHilel.Vista
 {
     /// <summary>
-    /// Interaction logic for ActualizarInventarioUsuario.xaml
+    /// Interaction logic for Principal.xaml
     /// </summary>
-    public partial class EnvioInventario : Page
+    public partial class Principal : NavigationWindow
     {
-        public EnvioInventario()
+        public Principal()
         {
             InitializeComponent();
-        }
-
-        private void b_cerrarAdmin_Click(object sender, RoutedEventArgs e)
-        {
-            Application.Current.Shutdown();
+            this.WindowState = WindowState.Maximized;
+            this.WindowStyle = WindowStyle.None;
+            this.Navigate(new Login());
+            this.ShowsNavigationUI = false;
         }
     }
 }

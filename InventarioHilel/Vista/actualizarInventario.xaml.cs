@@ -10,46 +10,41 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Logica = InventarioHilel.Controlador.Logica;
 
 namespace InventarioHilel.Vista
 {
     /// <summary>
     /// Interaction logic for actualizarInventario.xaml
     /// </summary>
-    public partial class actualizarInventario : Window
+    public partial class actualizarInventario : Page
     {
         public actualizarInventario()
         {
             InitializeComponent();
-            WindowState = WindowState.Maximized;
-            WindowStyle = WindowStyle.None;
-
-        }
-
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-
-
         }
 
         private void b_cerrarActualizacion_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            Application.Current.Shutdown();
         }
 
         private void b_deducirInventario_Click(object sender, RoutedEventArgs e)
         {
-            Window asd = new DeducirInventario();
-            asd.Visibility = Visibility.Visible;
-            this.Visibility = Visibility.Collapsed;
+            this.NavigationService.Navigate(new DeducirInventario());
         }
 
         private void b_AgregarInventario_Click(object sender, RoutedEventArgs e)
         {
-            Window asd = new AgregarInventario();
-            asd.Visibility = Visibility.Visible;
-            this.Visibility = Visibility.Collapsed;
+            this.NavigationService.Navigate(new AgregarInventario());
+        }
 
+        private void b_volver_Click(object sender, RoutedEventArgs e)
+        {
+            if (Logica.getInstance().Usuario.Admin)
+                this.NavigationService.Navigate(new MenuOpciones());
+            else
+                this.NavigationService.Navigate(new MenuUsuario());
         }
     }
 }

@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\User\documents\visual studio 2010\Projects\InventarioHilel\InventarioHilel\Vista\App.xaml
-8147963835
+12-1290805064
 
-16-647683
+20-788879559
 14-517183948
-Vista\actualizarInventario.xaml;Vista\AdministrarProductos.xaml;Vista\AdministrarUsuarios.xaml;Vista\Alertas.xaml;Vista\ConsultarInventario.xaml;Vista\Login.xaml;Vista\MenuOpciones.xaml;Vista\MenuUsuario.xaml;
+Vista\actualizarInventario.xaml;Vista\AdministrarProductos.xaml;Vista\AdministrarUsuarios.xaml;Vista\AgregarInventario.xaml;Vista\Alertas.xaml;Vista\ConsultarInventario.xaml;Vista\DeducirInventario.xaml;Vista\EnvioInventario.xaml;Vista\Login.xaml;Vista\MenuOpciones.xaml;Vista\MenuUsuario.xaml;Vista\Principal.xaml;
 
 False
 

@@ -95,6 +95,9 @@
     <Compile Include="Vista\MenuUsuario.xaml.cs">
       <DependentUpon>MenuUsuario.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Vista\Principal.xaml.cs">
+      <DependentUpon>Principal.xaml</DependentUpon>
+    </Compile>
     <Page Include="Vista\actualizarInventario.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -147,6 +150,10 @@
     <Page Include="Vista\MenuUsuario.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Vista\Principal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>

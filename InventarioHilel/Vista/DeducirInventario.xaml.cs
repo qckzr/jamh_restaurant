@@ -16,24 +16,16 @@ namespace InventarioHilel.Vista
     /// <summary>
     /// Interaction logic for DeducirInventario.xaml
     /// </summary>
-    public partial class DeducirInventario : Window
+    public partial class DeducirInventario : Page
     {
         public DeducirInventario()
         {
             InitializeComponent();
-            WindowState = WindowState.Maximized;
-            WindowStyle = WindowStyle.None;
         }
-
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
-
+        
         private void b_cerrarAdmin_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
-
+            Application.Current.Shutdown();
         }
 
        

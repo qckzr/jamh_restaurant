@@ -16,63 +16,50 @@ namespace InventarioHilel.Vista
     /// <summary>
     /// Interaction logic for MenuOpciones.xaml
     /// </summary>
-    public partial class MenuOpciones : Window
+    public partial class MenuOpciones : Page
     {
         public MenuOpciones()
         {
-            InitializeComponent();
-            WindowState = WindowState.Maximized;
-            WindowStyle = WindowStyle.None;
-        
+            InitializeComponent();        
         }
 
         private void button1_Click_1(object sender, RoutedEventArgs e)
         {
-            
-            this.Close();
+
+            Application.Current.Shutdown();
 
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            Window asd = new MenuUsuario();
-            asd.Visibility = Visibility.Visible;
-            this.Visibility = Visibility.Collapsed;
+            //Window asd = new MenuUsuario();
+            //asd.Visibility = Visibility.Visible;
+            //this.Visibility = Visibility.Collapsed;
         }
 
         private void b_ActualizarInventario_Click(object sender, RoutedEventArgs e)
         {
-            Window asd = new actualizarInventario();
-            asd.Visibility = Visibility.Visible;
-            this.Visibility = Visibility.Collapsed;
+            this.NavigationService.Navigate(new actualizarInventario());
         }
 
         private void b_consultarInventario_Click(object sender, RoutedEventArgs e)
         {
-            Window asd = new ConsultarInventario();
-            asd.Visibility = Visibility.Visible;
-            this.Visibility = Visibility.Collapsed;
+            this.NavigationService.Navigate(new ConsultarInventario());
         }
 
         private void b_AdministrarUsurios_Click(object sender, RoutedEventArgs e)
         {
-            Window asd = new AdministrarUsuarios();
-            asd.Visibility = Visibility.Visible;
-            this.Visibility = Visibility.Collapsed;
+            this.NavigationService.Navigate(new AdministrarUsuarios());
         }
 
         private void b_AdministrarProductos_Click(object sender, RoutedEventArgs e)
         {
-            Window asd = new AdministrarProductos();
-            asd.Visibility = Visibility.Visible;
-            this.Visibility = Visibility.Collapsed;
+            this.NavigationService.Navigate(new AdministrarProductos());
         }
 
         private void b_alertas_Click(object sender, RoutedEventArgs e)
         {
-            Window asd = new Alertas();
-            asd.Visibility = Visibility.Visible;
-            this.Visibility = Visibility.Collapsed;
+            this.NavigationService.Navigate(new Alertas());
         }
 
         

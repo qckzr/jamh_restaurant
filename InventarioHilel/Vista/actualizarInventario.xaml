@@ -1,7 +1,11 @@
-﻿<Window x:Class="InventarioHilel.Vista.actualizarInventario"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="actualizarInventario" Height="768" Width="1388" Loaded="Window_Loaded">
+﻿<Page x:Class="InventarioHilel.Vista.actualizarInventario"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="768" d:DesignWidth="1388"
+	Title="actualizarInventario">
     <Grid>
         <Image Height="69" HorizontalAlignment="Left" Margin="0,656,0,0" Name="image2" Stretch="Fill" VerticalAlignment="Top" Width="1439" Source="/InventarioHilel;component/Images/bordecito.png" Grid.RowSpan="2" Grid.Column="2" />
         <Label Content="Administrador" FontSize="18" FontWeight="Normal" Height="40" HorizontalAlignment="Left" Margin="1205,72,0,0" Name="labelTipoUsuario" VerticalAlignment="Top" Width="150" />
@@ -17,6 +21,6 @@
                 <ImageBrush ImageSource="/InventarioHilel;component/Images/Actions-application-exit-icon.png" />
             </Button.OpacityMask>
         </Button>
-        <Button Content="Volver" Height="52" HorizontalAlignment="Left" Margin="25,592,0,0" Name="b_volver" VerticalAlignment="Top" Width="128" Cursor="Hand" />
+        <Button Content="Volver" Height="52" HorizontalAlignment="Left" Margin="25,592,0,0" Name="b_volver" VerticalAlignment="Top" Width="128"  Click="b_volver_Click" Cursor="Hand" />
     </Grid>
-</Window>
+</Page>

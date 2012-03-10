@@ -10,24 +10,36 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Logica = InventarioHilel.Controlador.Logica;
 
 namespace InventarioHilel.Vista
 {
     /// <summary>
     /// Interaction logic for ConsultarInventario.xaml
     /// </summary>
-    public partial class ConsultarInventario : Window
+    public partial class ConsultarInventario : Page
     {
         public ConsultarInventario()
         {
             InitializeComponent();
-            WindowState = WindowState.Maximized;
-            WindowStyle = WindowStyle.None;
         }
 
         private void b_cerrarAdmin_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            Application.Current.Shutdown();
+        }
+
+        private void b_volver_Click(object sender, RoutedEventArgs e)
+        {
+            if (Logica.getInstance().Usuario.Admin)
+                this.NavigationService.Navigate(new MenuOpciones());
+            else
+                this.NavigationService.Navigate(new MenuUsuario());
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new EnvioInventario());
         }
 
         

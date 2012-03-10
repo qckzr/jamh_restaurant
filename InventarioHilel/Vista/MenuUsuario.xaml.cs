@@ -16,47 +16,31 @@ namespace InventarioHilel.Vista
     /// <summary>
     /// Interaction logic for MenuUsuario.xaml
     /// </summary>
-    public partial class MenuUsuario : Window
+    public partial class MenuUsuario : Page
     {
         public MenuUsuario()
         {
             InitializeComponent();
-              WindowState = WindowState.Maximized;
-              WindowStyle = WindowStyle.None;
-
         }
-
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-
+        
         private void b_cerrarUsuario_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            Application.Current.Shutdown();
         }
 
         private void b_ActualizarInventarioU_Click(object sender, RoutedEventArgs e)
         {
-            Window asd = new actualizarInventario();
-            asd.Visibility = Visibility.Visible;
-            this.Visibility = Visibility.Collapsed;
+            this.NavigationService.Navigate(new actualizarInventario());
         }
 
         private void b_alertasU_Click(object sender, RoutedEventArgs e)
         {
-            Window asd = new Alertas();
-            asd.Visibility = Visibility.Visible;
-            this.Visibility = Visibility.Collapsed;
+            this.NavigationService.Navigate(new Alertas());
         }
 
         private void b_consultarInventarioU_Click(object sender, RoutedEventArgs e)
         {
-            Window asd = new ConsultarInventario();
-            asd.Visibility = Visibility.Visible;
-            this.Visibility = Visibility.Collapsed;
-
+           this.NavigationService.Navigate(new ConsultarInventario());
         }
     }
 }

@@ -16,19 +16,17 @@ namespace InventarioHilel.Vista
     /// <summary>
     /// Interaction logic for AgregarInventario.xaml
     /// </summary>
-    public partial class AgregarInventario : Window
+    public partial class AgregarInventario : Page
     {
         public AgregarInventario()
         {
             InitializeComponent();
-            WindowState = WindowState.Maximized;
-            WindowStyle = WindowStyle.None;
 
         }
 
         private void b_cerrarAdmin_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            Application.Current.Shutdown();
         }
     }
 }

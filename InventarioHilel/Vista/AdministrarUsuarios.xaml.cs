@@ -16,18 +16,21 @@ namespace InventarioHilel.Vista
     /// <summary>
     /// Interaction logic for AdministrarUsuarios.xaml
     /// </summary>
-    public partial class AdministrarUsuarios : Window
+    public partial class AdministrarUsuarios : Page
     {
         public AdministrarUsuarios()
         {
             InitializeComponent();
-            WindowState = WindowState.Maximized;
-            WindowStyle = WindowStyle.None;
         }
 
         private void b_cerrarAdmin_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            Application.Current.Shutdown();
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new MenuOpciones());
         }
     }
 }

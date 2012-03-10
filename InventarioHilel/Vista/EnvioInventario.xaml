@@ -1,7 +1,11 @@
-﻿<Window x:Class="InventarioHilel.Vista.ActualizarInventarioUsuario"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="ActualizarInventarioUsuario"  Height="768" Width="1388">
+﻿<Page x:Class="InventarioHilel.Vista.EnvioInventario"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="768" d:DesignWidth="1388"
+	Title="EnvioInventario">
     <Grid>
        
 
@@ -11,7 +15,7 @@
         <Label Content="Administrador" FontSize="18" FontWeight="Normal" Height="40" HorizontalAlignment="Left" Margin="1204,66,0,0" Name="labelTipoUsuario" VerticalAlignment="Top" Width="150" />
         <Image Height="32" HorizontalAlignment="Left" Margin="1168,68,0,0" Name="image1" Source="/InventarioHilel;component/Images/lock-icon.png" Stretch="Fill" VerticalAlignment="Top" Width="30" />
         <Label Content="Envio de Inventario vía correo electronico:" FontSize="28" FontWeight="Bold" Height="47" HorizontalAlignment="Left" Margin="412,116,0,0" Name="label2" VerticalAlignment="Top" Width="572" />
-        <Button Cursor="Hand" Height="37" HorizontalAlignment="Left" Margin="1317,12,0,0" Name="b_cerrarAdmin" VerticalAlignment="Top" Width="37">
+        <Button Cursor="Hand" Height="37" HorizontalAlignment="Left" Margin="1317,12,0,0" Name="b_cerrarAdmin" Click="b_cerrarAdmin_Click" VerticalAlignment="Top" Width="37">
             <Button.Background>
                 <ImageBrush ImageSource="/InventarioHilel;component/Images/Actions-application-exit-icon.png" />
             </Button.Background>
@@ -22,4 +26,4 @@
         <Rectangle Height="55" HorizontalAlignment="Left" Margin="704,300,0,0" Name="rectangle1" Stroke="Black" VerticalAlignment="Top" Width="470" />
         <Button Content="Enviar" Height="70" HorizontalAlignment="Left" Margin="563,490,0,0" Name="button1" VerticalAlignment="Top" Width="241" FontSize="30" FontWeight="Normal" />
     </Grid>
-</Window>
+</Page>
