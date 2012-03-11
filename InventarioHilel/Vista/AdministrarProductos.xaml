@@ -23,6 +23,11 @@
                 <ImageBrush ImageSource="/InventarioHilel;component/Images/Actions-application-exit-icon.png" />
             </Button.OpacityMask>
         </Button>
-        <Button Content="volver" Height="60" HorizontalAlignment="Left" Margin="38,561,0,0" Name="button1" VerticalAlignment="Top" Click="button1_Click" Width="137" />
+        <Button Height="50" HorizontalAlignment="Left" Margin="4,603,0,0" Name="button1" VerticalAlignment="Top" Click="button1_Click" Width="50" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="/InventarioHilel;component/Images/VOLVER.png" />
+            </Button.Background>
+        </Button>
+        <Label Content="Regresar" FontSize="18" Height="39" HorizontalAlignment="Left" Margin="54,608,0,0" Name="label5" VerticalAlignment="Top" Width="82" />
     </Grid>
 </Page>

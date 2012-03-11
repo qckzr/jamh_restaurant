@@ -29,5 +29,11 @@
         </ListBox>
         <Rectangle Height="49" HorizontalAlignment="Left" Margin="542,499,0,0" Name="rectangle1" Stroke="Black" VerticalAlignment="Top" Width="233" />
         <Button Content="Aceptar" Height="50" HorizontalAlignment="Left" Margin="542,583,0,0" Name="b_deducirInventario" VerticalAlignment="Top" Width="233" FontSize="26" />
+        <Button Height="50" HorizontalAlignment="Left" Margin="4,603,0,0" Name="b_volver" VerticalAlignment="Top" Width="50" BorderBrush="{x:Null}" Click="b_volver_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/InventarioHilel;component/Images/VOLVER.png" />
+            </Button.Background>
+        </Button>
+        <Label Content="Regresar" Height="39" HorizontalAlignment="Left" Margin="51,609,0,0" Name="label5" VerticalAlignment="Top" Width="82" FontSize="18" />
     </Grid>
 </Page>

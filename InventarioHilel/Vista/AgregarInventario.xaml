@@ -28,5 +28,11 @@
         <Rectangle Height="39" HorizontalAlignment="Right" Margin="0,528,586,0" Name="rectangle1" Stroke="Black" VerticalAlignment="Top" Width="189" />
         <Calendar Height="180" HorizontalAlignment="Left" Margin="576,342,0,0" Name="calendar1" VerticalAlignment="Top" Width="216" />
         <Button Content="Aceptar" FontSize="26" Height="50" HorizontalAlignment="Left" Margin="591,587,0,0" Name="b_agregarInventario" VerticalAlignment="Top" Width="189" />
+        <Button BorderBrush="{x:Null}" Height="50" HorizontalAlignment="Left" Margin="4,603,0,0" Name="button1" VerticalAlignment="Top" Width="50" Click="button1_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/InventarioHilel;component/Images/VOLVER.png" />
+            </Button.Background>
+        </Button>
+        <Label Content="Regresar" FontSize="18" Height="39" HorizontalAlignment="Left" Margin="54,608,0,0" Name="label5" VerticalAlignment="Top" Width="82" />
     </Grid>
 </Page>

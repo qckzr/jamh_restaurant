@@ -21,8 +21,13 @@
                 <ImageBrush ImageSource="/InventarioHilel;component/Images/Actions-application-exit-icon.png" />
             </Button.OpacityMask>
         </Button>
-        <Button Content="VOLVER" Height="45" HorizontalAlignment="Left" Margin="28,592,0,0" Name="b_volver" Click="b_volver_Click" VerticalAlignment="Top" Width="122" />
+        <Button Height="50" HorizontalAlignment="Left" Margin="4,603,0,0" Name="b_volver" Click="b_volver_Click" VerticalAlignment="Top" Width="50" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="/InventarioHilel;component/Images/VOLVER.png" />
+            </Button.Background>
+        </Button>
         <Button Content="Cosultar un Producto del inventario" Cursor="Hand" FontSize="20" FontWeight="Bold" Height="53" HorizontalAlignment="Left" Margin="487,418,0,0" Name="b_guardarLocal" VerticalAlignment="Top" Width="368" />
         <Button Content="Enviar a Correo Electronico" Cursor="Hand" FontSize="20" FontWeight="Bold" Height="53" HorizontalAlignment="Left" Margin="489,510,0,0" Name="button1" Click="button1_Click"  VerticalAlignment="Top" Width="366" />
+        <Label Content="Regresar" FontSize="18" Height="39" HorizontalAlignment="Left" Margin="50,610,0,0" Name="label5" VerticalAlignment="Top" Width="82" />
     </Grid>
 </Page>

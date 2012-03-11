@@ -25,6 +25,5 @@
                 <ImageBrush ImageSource="/InventarioHilel;component/Images/Actions-application-exit-icon.png" />
             </Button.OpacityMask>
         </Button>
-        <Button Content="usuario" Height="35" HorizontalAlignment="Left" Margin="1146,151,0,0" Name="button1" VerticalAlignment="Top" Width="186" Click="button1_Click" Cursor="Hand" />
     </Grid>
 </Page>
