@@ -24,7 +24,7 @@
         <Label Content="Seleccionar Producto:" FontSize="28" FontWeight="Normal" Height="47" HorizontalAlignment="Left" Margin="243,189,0,0" Name="label3" VerticalAlignment="Top" Width="286" />
         <Label Content="Cantidad:" FontSize="28" FontWeight="Normal" Height="47" HorizontalAlignment="Left" Margin="384,501,0,0" Name="label4" VerticalAlignment="Top" Width="143" />
         <ComboBox Height="47" HorizontalAlignment="Right" Margin="0,413,529,0" Name="cb_fechaVencimiento" VerticalAlignment="Top" Width="295" />
-        <ListBox Height="213" HorizontalAlignment="Left" Margin="544,162,0,0" Name="listBoxProductos" VerticalAlignment="Top" Width="293">
+        <ListBox Height="213" HorizontalAlignment="Left" Margin="544,162,0,0" Name="listBoxProductos" VerticalAlignment="Top" Width="293" SelectionChanged="listBoxProductos_SelectionChanged">
             <ListBoxItem />
         </ListBox>
         <Rectangle Height="49" HorizontalAlignment="Left" Margin="542,499,0,0" Name="rectangle1" Stroke="Black" VerticalAlignment="Top" Width="233" />
