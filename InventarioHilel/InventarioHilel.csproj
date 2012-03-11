@@ -195,6 +195,18 @@
   <ItemGroup>
     <Resource Include="Images\lock-icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\VOLVER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\BACK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\User-yellow-icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
