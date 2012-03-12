@@ -1,0 +1,26 @@
+﻿<Window x:Class="InventarioHilel.Vista.CrearProducto"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CrearProducto" Height="768" Width="1388">
+    <Grid>
+        <Image Height="69" HorizontalAlignment="Left" Margin="0,656,0,0" Name="image2" Stretch="Fill" VerticalAlignment="Top" Width="1439" Source="/InventarioHilel;component/Images/bordecito.png" Grid.RowSpan="2" Grid.Column="2" />
+        <Label Content="Administrador" Height="40" HorizontalAlignment="Left" Margin="1182,83,0,0" Name="labelTipoUsuario" VerticalAlignment="Top" Width="150" FontSize="18" FontWeight="Normal" />
+        <Image Height="32" HorizontalAlignment="Left" Margin="1146,85,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="30" Source="/InventarioHilel;component/Images/lock-icon.png" />
+        <Button Cursor="Hand" Height="37" HorizontalAlignment="Left" Margin="1295,29,0,0" Name="b_cerrarAdmin" VerticalAlignment="Top" Width="37" Click="b_cerrarAdmin_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/InventarioHilel;component/Images/Actions-application-exit-icon.png" />
+            </Button.Background>
+            <Button.OpacityMask>
+                <ImageBrush ImageSource="/InventarioHilel;component/Images/Actions-application-exit-icon.png" />
+            </Button.OpacityMask>
+        </Button>
+        <Label FontSize="28" FontWeight="Normal" Height="58" HorizontalAlignment="Left" Margin="344,210,0,0" Name="label1" VerticalAlignment="Top" Width="289" Content="Nombre del producto:" />
+        <Label Content="Crear Producto" FontSize="28" FontWeight="Bold" Height="47" HorizontalAlignment="Left" Margin="586,101,0,0" Name="label2" VerticalAlignment="Top" Width="232" />
+        <Button Content="Guardar" FontSize="30" FontWeight="Normal" Height="54" HorizontalAlignment="Left" Margin="586,559,0,0" Name="button1" VerticalAlignment="Top" Width="200" />
+        <TextBox Height="58" HorizontalAlignment="Left" Margin="659,210,0,0" Name="tb_producto" VerticalAlignment="Top" Width="424" />
+        <Label Content="Cantidad:" FontSize="28" FontWeight="Normal" Height="58" HorizontalAlignment="Left" Margin="502,374,0,0" Name="label3" VerticalAlignment="Top" Width="131" />
+        <TextBox Height="58" HorizontalAlignment="Right" Margin="0,374,423,0" Name="textBox1" VerticalAlignment="Top" Width="284" />
+        <Label Content="Tipo de producto:" FontSize="28" FontWeight="Normal" Height="58" HorizontalAlignment="Left" Margin="398,296,0,0" Name="label4" VerticalAlignment="Top" Width="235" />
+        <ComboBox Height="54" HorizontalAlignment="Right" Margin="0,296,349,0" Name="comboBox1" VerticalAlignment="Top" Width="358" />
+    </Grid>
+</Window>
