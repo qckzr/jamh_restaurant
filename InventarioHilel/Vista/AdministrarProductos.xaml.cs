@@ -48,5 +48,25 @@ namespace InventarioHilel.Vista
                 image1.Source = new BitmapImage(new Uri("/InventarioHilel;component/Images/User-yellow-icon.png", UriKind.RelativeOrAbsolute));
 
         }
+
+       
+        private void b_modificarProducto_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new ModificarProducto());
+        }
+
+       
+
+        private void b_eliminarProducto_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new EliminarProducto());
+        }
+
+        private void b_consultarProducto_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new ConsultarProducto());
+        }
+
+       
     }
 }

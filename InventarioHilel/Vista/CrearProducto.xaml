@@ -18,7 +18,7 @@
         <Label Content="Crear Producto" FontSize="28" FontWeight="Bold" Height="47" HorizontalAlignment="Left" Margin="586,101,0,0" Name="label2" VerticalAlignment="Top" Width="232" />
         <Button Content="Guardar" FontSize="30" FontWeight="Normal" Height="54" HorizontalAlignment="Left" Margin="586,559,0,0" Name="button1" VerticalAlignment="Top" Width="200" />
         <TextBox Height="58" HorizontalAlignment="Left" Margin="659,210,0,0" Name="tb_producto" VerticalAlignment="Top" Width="424" />
-        <Label Content="Cantidad:" FontSize="28" FontWeight="Normal" Height="58" HorizontalAlignment="Left" Margin="502,374,0,0" Name="label3" VerticalAlignment="Top" Width="131" />
+        <Label Content="Cantidad minima:" FontSize="28" FontWeight="Normal" Height="58" HorizontalAlignment="Left" Margin="398,374,0,0" Name="label3" VerticalAlignment="Top" Width="235" />
         <TextBox Height="58" HorizontalAlignment="Right" Margin="0,374,423,0" Name="textBox1" VerticalAlignment="Top" Width="284" />
         <Label Content="Tipo de producto:" FontSize="28" FontWeight="Normal" Height="58" HorizontalAlignment="Left" Margin="398,296,0,0" Name="label4" VerticalAlignment="Top" Width="235" />
         <ComboBox Height="54" HorizontalAlignment="Right" Margin="0,296,349,0" Name="comboBox1" VerticalAlignment="Top" Width="358" />

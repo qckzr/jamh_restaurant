@@ -12,9 +12,9 @@
         <Image Height="32" HorizontalAlignment="Left" Margin="1146,85,0,0" Name="image1" Source="/InventarioHilel;component/Images/lock-icon.png" Stretch="Fill" VerticalAlignment="Top" Width="30" />
         <Label Content="Administrar Productos:" FontSize="28" FontWeight="Bold" Height="47" HorizontalAlignment="Left" Margin="500,119,0,0" Name="label1" VerticalAlignment="Top" Width="325" />
         <Button Content="Crear Producto" Cursor="Hand" FontSize="20" FontWeight="Bold" Height="53" HorizontalAlignment="Left" Margin="317,255,0,0" Name="b_crearProducto" VerticalAlignment="Top" Width="292" />
-        <Button Content="Consultar Producto" Cursor="Hand" FontSize="20" FontWeight="Bold" Height="53" HorizontalAlignment="Left" Margin="317,371,0,0" Name="b_consultarProducto" VerticalAlignment="Top" Width="292" />
-        <Button Content="Eliminar Producto" Cursor="Hand" FontSize="20" FontWeight="Bold" Height="53" HorizontalAlignment="Left" Margin="682,371,0,0" Name="b_AdministrarUsurios" VerticalAlignment="Top" Width="292" />
-        <Button Content="Modificar Producto" Cursor="Hand" FontSize="20" FontWeight="Bold" Height="53" HorizontalAlignment="Left" Margin="682,255,0,0" Name="b_modificarProducto" VerticalAlignment="Top" Width="292" />
+        <Button Content="Consultar Producto" Cursor="Hand" FontSize="20" FontWeight="Bold" Height="53" HorizontalAlignment="Left" Margin="317,371,0,0" Name="b_consultarProducto" VerticalAlignment="Top" Width="292" Click="b_consultarProducto_Click" />
+        <Button Content="Eliminar Producto" Cursor="Hand" FontSize="20" FontWeight="Bold" Height="53" HorizontalAlignment="Left" Margin="682,371,0,0" Name="b_eliminarProducto" VerticalAlignment="Top" Width="292" Click="b_eliminarProducto_Click" />
+        <Button Content="Modificar Producto" Cursor="Hand" FontSize="20" FontWeight="Bold" Height="53" HorizontalAlignment="Left" Margin="682,255,0,0" Name="b_modificarProducto" VerticalAlignment="Top" Width="292" Click="b_modificarProducto_Click" />
         <Button Cursor="Hand" Height="37" HorizontalAlignment="Left" Margin="1295,29,0,0" Name="b_cerrarAdmin" VerticalAlignment="Top" Width="37" Click="b_cerrarAdmin_Click">
             <Button.Background>
                 <ImageBrush ImageSource="/InventarioHilel;component/Images/Actions-application-exit-icon.png" />
