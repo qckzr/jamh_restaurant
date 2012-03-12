@@ -21,6 +21,8 @@ namespace InventarioHilel.Vista
     /// </summary>
     public partial class DeducirInventario : Page
     {
+        int idProducto;
+
         public DeducirInventario()
         {
             InitializeComponent();
@@ -42,10 +44,12 @@ namespace InventarioHilel.Vista
 
         private void listBoxProductos_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            DataTable dt = Logica.getInstance().getDb().consultar("select strftime('%d-%m-%Y',fecha_vencimiento) from fecha_productos where id_producto=(select id from productos where nombre='"+listBoxProductos.SelectedItem.ToString()+"')");
+            DataTable dt = Logica.getInstance().getDb().consultar("select strftime('%d-%m-%Y',fecha_vencimiento), id_producto from fecha_productos where id_producto=(select id from productos where nombre='"+listBoxProductos.SelectedItem.ToString()+"')");
             foreach (DataRow dr in dt.Rows)
             {
                 cb_fechaVencimiento.Items.Add(dr[0].ToString());
+                idProducto = Convert.ToInt32(dr[1].ToString());
+                Console.WriteLine("id producto = " + idProducto);
                 
             }
         }
@@ -60,6 +64,52 @@ namespace InventarioHilel.Vista
             }
         }
 
+        private void b_deducirInventario_Click(object sender, RoutedEventArgs e)
+        {
+            if (validar() == true)
+            {
+
+                if (Logica.getInstance().deducirDelInventario(idProducto, cb_fechaVencimiento.SelectedItem.ToString(), Convert.ToInt32(textBoxCantidad.Text)) == true)
+                {
+
+                    MessageBox.Show("Se ha deducido " + textBoxCantidad.Text + " unidades del producto del producto " + listBoxProductos.SelectedItem.ToString());
+                    this.NavigationService.Navigate(new DeducirInventario());
+                }
+                else MessageBox.Show("La cantidad tiene que ser menor ");
+                //SE PODRIA COLOCAR EN LA INTEFAZ CUANTOS HAY DISPONIBLES :)
+                //FALTA VALIDAR SI COLOCA UNA LETRA EN DONDE VA CANTIDAD =.=
+            }
+
+        }
+
+        private void cb_fechaVencimiento_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            
+        }
+
+        private void textBoxCantidad_TextChanged(object sender, TextChangedEventArgs e)
+        {
+           
+                
+        }
+
+
+        private Boolean validar()
+        {
+            if (textBoxCantidad.Text.Length==0)
+            {
+                MessageBox.Show("La cantidad no puede estar vacia");
+                return false;
+            }
+            if (Convert.ToInt32(textBoxCantidad.Text) < 0)
+            {
+                MessageBox.Show("La cantidad no puede ser negativa");
+                return false;
+            }
+
+            return true;
+
+        }
        
     }
 }

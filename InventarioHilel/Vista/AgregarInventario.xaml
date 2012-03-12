@@ -19,20 +19,23 @@
                 <ImageBrush ImageSource="/InventarioHilel;component/Images/Actions-application-exit-icon.png" />
             </Button.OpacityMask>
         </Button>
-        <Label Content="Seleccionar fecha de vencimiento:" FontSize="28" FontWeight="Normal" Height="47" HorizontalAlignment="Left" Margin="93,358,0,0" Name="label2" VerticalAlignment="Top" Width="429" />
-        <Label Content="Seleccionar Producto:" FontSize="28" FontWeight="Normal" Height="47" HorizontalAlignment="Left" Margin="234,206,0,0" Name="label3" VerticalAlignment="Top" Width="286" />
-        <Label Content="Cantidad:" FontSize="28" FontWeight="Normal" Height="47" HorizontalAlignment="Left" Margin="379,520,0,0" Name="label4" VerticalAlignment="Top" Width="143" />
-        <ListBox Height="154" HorizontalAlignment="Left" Margin="537,162,0,0" Name="listBoxProductos" VerticalAlignment="Top" Width="293">
+        <Label Content="Seleccionar fecha de vencimiento:" FontSize="28" FontWeight="Normal" Height="47" HorizontalAlignment="Left" Margin="93,310,0,0" Name="label2" VerticalAlignment="Top" Width="429" />
+        <Label Content="Seleccionar Producto:" FontSize="28" FontWeight="Normal" Height="47" HorizontalAlignment="Left" Margin="236,176,0,0" Name="label3" VerticalAlignment="Top" Width="286" />
+        <Label Content="Cantidad:" FontSize="28" FontWeight="Normal" Height="47" HorizontalAlignment="Left" Margin="379,422,0,0" Name="label4" VerticalAlignment="Top" Width="143" />
+        <ListBox Height="91" HorizontalAlignment="Left" Margin="537,162,0,0" Name="listBoxProductos" VerticalAlignment="Top" Width="293" SelectionChanged="listBoxProductos_SelectionChanged">
             <ListBoxItem />
         </ListBox>
-        <Rectangle Height="39" HorizontalAlignment="Right" Margin="0,528,586,0" Name="rectangle1" Stroke="Black" VerticalAlignment="Top" Width="189" />
-        <Calendar Height="180" HorizontalAlignment="Left" Margin="576,342,0,0" Name="calendar1" VerticalAlignment="Top" Width="216" />
-        <Button Content="Aceptar" FontSize="26" Height="50" HorizontalAlignment="Left" Margin="591,587,0,0" Name="b_agregarInventario" VerticalAlignment="Top" Width="189" />
+        
+        <Calendar Height="180" HorizontalAlignment="Left" Margin="576,272,0,0" Name="calendar1" VerticalAlignment="Top" Width="216" SelectedDatesChanged="calendar1_SelectedDatesChanged" />
+        <Button Content="Aceptar" FontSize="26" Height="50" HorizontalAlignment="Left" Margin="591,0,0,131" Name="b_agregarInventario" VerticalAlignment="Bottom" Width="189" Click="b_agregarInventario_Click" />
         <Button BorderBrush="{x:Null}" Height="50" HorizontalAlignment="Left" Margin="4,603,0,0" Name="button1" VerticalAlignment="Top" Width="50" Click="button1_Click">
             <Button.Background>
                 <ImageBrush ImageSource="/InventarioHilel;component/Images/VOLVER.png" />
             </Button.Background>
         </Button>
         <Label Content="Regresar" FontSize="18" Height="39" HorizontalAlignment="Left" Margin="54,608,0,0" Name="label5" VerticalAlignment="Top" Width="82" />
+        <TextBox Height="39" Margin="591,422,0,0" Name="textBoxCantidad" VerticalAlignment="Top" FontSize="18" HorizontalAlignment="Left" Width="162" />
+        <Label Content="Ubicacion:" FontSize="28" FontWeight="Normal" Height="47" HorizontalAlignment="Left" Margin="379,484,0,0" Name="label7" VerticalAlignment="Top" Width="143" />
+        <TextBox Height="47" HorizontalAlignment="Left" Margin="591,484,0,0" Name="textBoxUbicacion" VerticalAlignment="Top" Width="351" FontSize="18" />
     </Grid>
 </Page>

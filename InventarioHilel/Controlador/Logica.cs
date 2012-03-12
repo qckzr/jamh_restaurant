@@ -58,24 +58,21 @@ namespace InventarioHilel.Controlador
 
         public Boolean deducirDelInventario(int idProducto, String fechaVencimiento, int cantidad)
         {
-            DataTable cantidadActual = db.consultar(
-                "select cantidadactual from fecha_productos where id_prodcuto="+idProducto+" and fecha_vencimiento='"+fechaVencimiento+"'");
-            DataRow columna = cantidadActual.Rows[0];
-            if (Convert.ToInt32(columna[0].ToString()) < cantidad)
+            int cantidadActual = Convert.ToInt32(Logica.getInstance().getDb().consultar("select cantidad_actual from fecha_productos where strftime('%d-%m-%Y',fecha_vencimiento)='" + fechaVencimiento + "' and id_producto=" + idProducto).Rows[0][0].ToString());
+            if (cantidadActual < cantidad)
                 return false;
             else
             {
-                db.hacerQuery(
-                    "update from fecha_productos set cantidadactual=cantidadactual-"+cantidad+"where id_producto="+idProducto+" and fecha_vencimiento='"+fechaVencimiento+"'");
+                int nuevaCantidadActual = cantidadActual - cantidad;
+                getDb().hacerQuery("update fecha_productos set cantidad_actual=" + nuevaCantidadActual+ " where strftime('%d-%m-%Y',fecha_vencimiento)='" + fechaVencimiento + "' and id_producto=" + idProducto + "");
                 return true;
             }
 
         }
 
-        public Boolean agregarAlInventario(int idProducto, String fechaVencimiento, int cantidad)
+        public Boolean agregarAlInventario(int idProducto, String fechaVencimiento, int cantidad,String ubicacion)
         {
-            db.hacerQuery
-                ("insert into fecha_productos (fecha_adquisicion,hora_adquisicion,id_producto,cantidadinicial,cantidadactual,fecha_vencimiento values ('"+DateTime.Now.ToShortDateString()+"','"+DateTime.Now.ToLongDateString()+"',"+idProducto+","+cantidad+","+cantidad+",'"+fechaVencimiento+"'");
+            getDb().hacerQuery("insert into fecha_productos(fecha_adquisicion,hora_adquisicion,id_producto,cantidad_inicial,cantidad_actual,fecha_vencimiento,ubicacion) values(date('now','localtime'),time('now','localtime')," + idProducto + "," + cantidad + "," + cantidad + ",'"+fechaVencimiento+"'," + ubicacion + ")");
             return true;
         }
 
