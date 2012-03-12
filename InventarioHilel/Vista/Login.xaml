@@ -24,8 +24,8 @@
         <Button Content="Ingresar" Height="44" HorizontalAlignment="Left" Margin="616,511,0,0" Name="buttonIngresar" VerticalAlignment="Top" Width="150" Click="buttonIngresar_Click" FontSize="20" Grid.Column="2" Cursor="Hand" />
         <Image Height="142" HorizontalAlignment="Left" Margin="427,90,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="466" Source="/InventarioHilel;component/Images/logohilel.png" Grid.Column="2" />
         <Image Height="69" HorizontalAlignment="Left" Margin="0,656,0,0" Name="image2" Stretch="Fill" VerticalAlignment="Top" Width="1439" Source="/InventarioHilel;component/Images/bordecito.png" Grid.RowSpan="2" Grid.Column="2" />
-        
-        <Button Grid.Column="2" Height="37" HorizontalAlignment="Left" Margin="1317,12,0,0" Name="b_cerrar" VerticalAlignment="Top" Width="37" Click="b_cerrar_Click" Cursor="Hand" BorderBrush="White" Focusable="False" IsManipulationEnabled="True" BorderThickness="0">
+
+        <Button Grid.Column="2" Height="37" HorizontalAlignment="Left" Margin="1295,29,0,0" Name="b_cerrar" VerticalAlignment="Top" Width="37" Click="b_cerrar_Click" Cursor="Hand" BorderBrush="White" Focusable="False" IsManipulationEnabled="True" BorderThickness="0">
             <Button.OpacityMask>
                 <ImageBrush ImageSource="/InventarioHilel;component/Images/Actions-application-exit-icon.png" />
             </Button.OpacityMask>

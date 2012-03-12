@@ -12,10 +12,10 @@
 
         <Image Height="69" HorizontalAlignment="Left" Margin="0,656,0,0" Name="image2" Stretch="Fill" VerticalAlignment="Top" Width="1439" Source="/InventarioHilel;component/Images/bordecito.png" Grid.RowSpan="2" Grid.Column="2" />
         <Label Content="Direccion de correo electronico:" FontSize="28" FontWeight="Normal" Height="47" HorizontalAlignment="Left" Margin="274,308,0,0" Name="label1" VerticalAlignment="Top" Width="424" />
-        <Label Content="Administrador" FontSize="18" FontWeight="Normal" Height="40" HorizontalAlignment="Left" Margin="1204,66,0,0" Name="labelTipoUsuario" VerticalAlignment="Top" Width="150" />
-        <Image Height="32" HorizontalAlignment="Left" Margin="1168,68,0,0" Name="image1" Source="/InventarioHilel;component/Images/lock-icon.png" Stretch="Fill" VerticalAlignment="Top" Width="30" />
+        <Label Content="Administrador" FontSize="18" FontWeight="Normal" Height="40" HorizontalAlignment="Left" Margin="1182,83,0,0" Name="labelTipoUsuario" VerticalAlignment="Top" Width="150" />
+        <Image Height="32" HorizontalAlignment="Left" Margin="1146,85,0,0" Name="image1" Source="/InventarioHilel;component/Images/lock-icon.png" Stretch="Fill" VerticalAlignment="Top" Width="30" />
         <Label Content="Envio de Inventario vía correo electronico:" FontSize="28" FontWeight="Bold" Height="47" HorizontalAlignment="Left" Margin="412,116,0,0" Name="label2" VerticalAlignment="Top" Width="572" />
-        <Button Cursor="Hand" Height="37" HorizontalAlignment="Left" Margin="1317,12,0,0" Name="b_cerrarAdmin" Click="b_cerrarAdmin_Click" VerticalAlignment="Top" Width="37">
+        <Button Cursor="Hand" Height="37" HorizontalAlignment="Left" Margin="1295,29,0,0" Name="b_cerrarAdmin" Click="b_cerrarAdmin_Click" VerticalAlignment="Top" Width="37">
             <Button.Background>
                 <ImageBrush ImageSource="/InventarioHilel;component/Images/Actions-application-exit-icon.png" />
             </Button.Background>

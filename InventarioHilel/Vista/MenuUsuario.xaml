@@ -9,7 +9,7 @@
     <Grid>
 
         <Image Height="69" HorizontalAlignment="Left" Margin="0,656,0,0" Name="image2" Stretch="Fill" VerticalAlignment="Top" Width="1439" Source="/InventarioHilel;component/Images/bordecito.png" Grid.RowSpan="2" Grid.Column="2" />
-        <Button Height="37" HorizontalAlignment="Left" Margin="1321,10,0,0" Name="b_cerrarUsuario" VerticalAlignment="Top" Width="37" Foreground="White" BorderBrush="White" Click="b_cerrarUsuario_Click" Cursor="Hand" Focusable="False">
+        <Button Height="37" HorizontalAlignment="Left" Margin="1295,29,0,0" Name="b_cerrarUsuario" VerticalAlignment="Top" Width="37" Foreground="White" BorderBrush="White" Click="b_cerrarUsuario_Click" Cursor="Hand" Focusable="False">
             <Button.Background>
                 <ImageBrush ImageSource="/InventarioHilel;component/Images/Actions-application-exit-icon.png" />
             </Button.Background>
@@ -18,8 +18,8 @@
         <Button Content="Crear Producto" FontSize="20" FontWeight="Bold" Height="53" HorizontalAlignment="Left" Margin="332,394,0,0" Name="b_CrearProductosU" VerticalAlignment="Top" Width="292" Cursor="Hand" />
         <Button Content="Consultar Inventario" FontSize="20" FontWeight="Bold" Height="53" HorizontalAlignment="Left" Margin="697,278,0,0" Name="b_consultarInventarioU" VerticalAlignment="Top" Width="292" Cursor="Hand" Click="b_consultarInventarioU_Click" />
         <Button Content="Alertas" FontSize="20" FontWeight="Bold" Height="53" HorizontalAlignment="Right" Margin="0,394,377,0" Name="b_alertasU" VerticalAlignment="Top" Width="292" Cursor="Hand" Click="b_alertasU_Click" />
-        <Label Content="Usuario" FontSize="18" FontWeight="Normal" Height="40" HorizontalAlignment="Right" Margin="0,59,22,0" Name="labelTipoUsuario" VerticalAlignment="Top" Width="74" />
-        <Image Height="40" HorizontalAlignment="Left" Margin="1235,56,0,0" Name="image1" Source="/InventarioHilel;component/Images/User-yellow-icon.png" Stretch="Fill" VerticalAlignment="Top" Width="40" />
+        <Label Content="Usuario" FontSize="18" FontWeight="Normal" Height="40" HorizontalAlignment="Left" Margin="1182,83,0,0" Name="labelTipoUsuario" VerticalAlignment="Top" Width="150" />
+        <Image Height="40" HorizontalAlignment="Left" Margin="1146,85,0,0" Name="image1" Source="/InventarioHilel;component/Images/User-yellow-icon.png" Stretch="Fill" VerticalAlignment="Top" Width="40" />
         <Label Content="Seleccione la opción que desea realizar:" FontSize="28" FontWeight="Bold" Height="47" HorizontalAlignment="Left" Margin="412,161,0,0" Name="label1" VerticalAlignment="Top" Width="529" />
     </Grid>
 </Page>

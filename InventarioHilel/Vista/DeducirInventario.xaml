@@ -9,10 +9,10 @@
     <Grid>
 
         <Image Height="69" HorizontalAlignment="Left" Margin="0,656,0,0" Name="image2" Stretch="Fill" VerticalAlignment="Top" Width="1439" Source="/InventarioHilel;component/Images/bordecito.png" Grid.RowSpan="2" Grid.Column="2" />
-        <Label Content="Administrador" FontSize="18" FontWeight="Normal" Height="40" HorizontalAlignment="Left" Margin="1204,67,0,0" Name="labelTipoUsuario" VerticalAlignment="Top" Width="150" />
-        <Image Height="32" HorizontalAlignment="Left" Margin="1168,69,0,0" Name="image1" Source="/InventarioHilel;component/Images/lock-icon.png" Stretch="Fill" VerticalAlignment="Top" Width="30" />
+        <Label Content="Administrador" FontSize="18" FontWeight="Normal" Height="40" HorizontalAlignment="Left" Margin="1182,83,0,0" Name="labelTipoUsuario" VerticalAlignment="Top" Width="150" />
+        <Image Height="32" HorizontalAlignment="Left" Margin="1146,85,0,0" Name="image1" Source="/InventarioHilel;component/Images/lock-icon.png" Stretch="Fill" VerticalAlignment="Top" Width="30" />
         <Label Content="Deducir del inventario:" FontSize="28" FontWeight="Bold" Height="47" HorizontalAlignment="Left" Margin="527,69,0,0" Name="label1" VerticalAlignment="Top" Width="306" />
-        <Button Cursor="Hand" Height="37" HorizontalAlignment="Left" Margin="1317,13,0,0" Name="b_cerrarAdmin" VerticalAlignment="Top" Width="37" Click="b_cerrarAdmin_Click">
+        <Button Cursor="Hand" Height="37" HorizontalAlignment="Left" Margin="1295,29,0,0" Name="b_cerrarAdmin" VerticalAlignment="Top" Width="37" Click="b_cerrarAdmin_Click">
             <Button.Background>
                 <ImageBrush ImageSource="/InventarioHilel;component/Images/Actions-application-exit-icon.png" />
             </Button.Background>
