@@ -32,10 +32,7 @@ namespace InventarioHilel.Vista
 
         private void button2_Click(object sender, RoutedEventArgs e)
         {
-            if (Logica.getInstance().Usuario.Admin)
-                this.NavigationService.Navigate(new MenuOpciones());
-            else
-                this.NavigationService.Navigate(new MenuUsuario());
+            this.NavigationService.Navigate(new ConsultarInventario());
         }
     }
 }

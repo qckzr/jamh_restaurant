@@ -41,7 +41,7 @@ namespace InventarioHilel.Controlador
             if (tipo == 0)
                 query = "select id from usuario where nickname='" + opcion + "'";
             else
-                query = "select id from producto where nombre = '"+ opcion +"'";
+                query = "select id from productos where nombre = '"+ opcion +"'";
             DataTable usuario = db.consultar(query);
             return usuario.Rows[0]["id"].ToString();
         }
@@ -73,7 +73,7 @@ namespace InventarioHilel.Controlador
 
         public string nombreProductoBD(DAOBaseDatos db, string producto)
         {
-            string query = "select nombre from producto where id=" + producto;
+            string query = "select nombre from productos where id=" + producto;
             DataTable dato = db.consultar(query);
             return dato.Rows[0]["nombre"].ToString();
         }

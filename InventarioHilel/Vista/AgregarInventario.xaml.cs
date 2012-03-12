@@ -38,10 +38,7 @@ namespace InventarioHilel.Vista
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            if (Logica.getInstance().Usuario.Admin)
-                this.NavigationService.Navigate(new MenuOpciones());
-            else
-                this.NavigationService.Navigate(new MenuUsuario());
+            this.NavigationService.Navigate(new actualizarInventario());
         }
 
         private void listBoxProductos_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -84,6 +81,8 @@ namespace InventarioHilel.Vista
 
                     Logica.getInstance().agregarAlInventario(idProducto, anio + "-" + mes + "-" + dia, cantidad,ubicacion);
                     MessageBox.Show("Se ha agregado en inventario el producto " + listBoxProductos.SelectedItem + " con una cantidad de " + cantidad);
+                    Logica.getInstance().Usuario.registrarAccion(Logica.getInstance().getDb(),
+                        "AGREGO AL INVENTARIO " + cantidad, listBoxProductos.SelectedItem.ToString());
                     this.NavigationService.Navigate(new AgregarInventario());
             }
                 

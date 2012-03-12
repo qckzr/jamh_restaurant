@@ -36,10 +36,7 @@ namespace InventarioHilel.Vista
 
         private void b_volver_Click(object sender, RoutedEventArgs e)
         {
-            if (Logica.getInstance().Usuario.Admin)
-                this.NavigationService.Navigate(new MenuOpciones());
-            else
-                this.NavigationService.Navigate(new MenuUsuario());
+            this.NavigationService.Navigate(new actualizarInventario());
         }
 
         private void listBoxProductos_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -73,6 +70,8 @@ namespace InventarioHilel.Vista
                 {
 
                     MessageBox.Show("Se ha deducido " + textBoxCantidad.Text + " unidades del producto del producto " + listBoxProductos.SelectedItem.ToString());
+                    Logica.getInstance().Usuario.registrarAccion(Logica.getInstance().getDb(), 
+                        "DEDUJO DEL INVENTARIO " + textBoxCantidad.Text, listBoxProductos.SelectedItem.ToString());
                     this.NavigationService.Navigate(new DeducirInventario());
                 }
                 else MessageBox.Show("La cantidad tiene que ser menor ");
