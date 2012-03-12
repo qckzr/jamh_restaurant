@@ -19,7 +19,7 @@
         <Button Content="Consultar Inventario" FontSize="20" FontWeight="Bold" Height="53" HorizontalAlignment="Left" Margin="697,278,0,0" Name="b_consultarInventarioU" VerticalAlignment="Top" Width="292" Cursor="Hand" Click="b_consultarInventarioU_Click" />
         <Button Content="Alertas" FontSize="20" FontWeight="Bold" Height="53" HorizontalAlignment="Right" Margin="0,394,377,0" Name="b_alertasU" VerticalAlignment="Top" Width="292" Cursor="Hand" Click="b_alertasU_Click" />
         <Label Content="Usuario" FontSize="18" FontWeight="Normal" Height="40" HorizontalAlignment="Left" Margin="1182,83,0,0" Name="labelTipoUsuario" VerticalAlignment="Top" Width="150" />
-        <Image Height="40" HorizontalAlignment="Left" Margin="1146,85,0,0" Name="image1" Source="/InventarioHilel;component/Images/User-yellow-icon.png" Stretch="Fill" VerticalAlignment="Top" Width="40" />
+        <Image Height="32" HorizontalAlignment="Left" Margin="1146,85,0,0" Name="image1" Source="/InventarioHilel;component/Images/User-yellow-icon.png" Stretch="Fill" VerticalAlignment="Top" Width="30" />
         <Label Content="Seleccione la opción que desea realizar:" FontSize="28" FontWeight="Bold" Height="47" HorizontalAlignment="Left" Margin="412,161,0,0" Name="label1" VerticalAlignment="Top" Width="529" />
     </Grid>
 </Page>

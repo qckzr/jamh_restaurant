@@ -10,6 +10,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Logica = InventarioHilel.Controlador.Logica;
 
 namespace InventarioHilel.Vista
 {
@@ -20,7 +21,8 @@ namespace InventarioHilel.Vista
     {
         public MenuOpciones()
         {
-            InitializeComponent();        
+            InitializeComponent();
+            iniciarValores();
         }
 
         private void button1_Click_1(object sender, RoutedEventArgs e)
@@ -62,6 +64,14 @@ namespace InventarioHilel.Vista
             this.NavigationService.Navigate(new Alertas());
         }
 
+
+        private void iniciarValores()
+        {
+            if (Logica.getInstance().Usuario.Admin == true)
+            {
+                labelTipoUsuario.Content = Logica.getInstance().Usuario.Nick;
+            }
+        }
         
      
     }

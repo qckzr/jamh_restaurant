@@ -23,6 +23,7 @@ namespace InventarioHilel.Vista
         public EnvioInventario()
         {
             InitializeComponent();
+            iniciarValores();
         }
 
         private void b_cerrarAdmin_Click(object sender, RoutedEventArgs e)
@@ -33,6 +34,17 @@ namespace InventarioHilel.Vista
         private void button2_Click(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(new ConsultarInventario());
+        }
+
+        private void iniciarValores()
+        {
+            labelTipoUsuario.Content = Logica.getInstance().Usuario.Nick;
+            if (Logica.getInstance().Usuario.Admin == true)
+
+                image1.Source = new BitmapImage(new Uri("/InventarioHilel;component/Images/lock-icon.png", UriKind.RelativeOrAbsolute));
+            else
+                image1.Source = new BitmapImage(new Uri("/InventarioHilel;component/Images/User-yellow-icon.png", UriKind.RelativeOrAbsolute));
+
         }
     }
 }

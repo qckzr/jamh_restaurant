@@ -10,6 +10,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Logica = InventarioHilel.Controlador.Logica;
 
 namespace InventarioHilel.Vista
 {
@@ -21,6 +22,8 @@ namespace InventarioHilel.Vista
         public MenuUsuario()
         {
             InitializeComponent();
+            iniciarValores();
+            
         }
         
         private void b_cerrarUsuario_Click(object sender, RoutedEventArgs e)
@@ -41,6 +44,13 @@ namespace InventarioHilel.Vista
         private void b_consultarInventarioU_Click(object sender, RoutedEventArgs e)
         {
            this.NavigationService.Navigate(new ConsultarInventario());
+        }
+
+        private void iniciarValores()
+        {
+            labelTipoUsuario.Content = Logica.getInstance().Usuario.Nick;
+           
+
         }
     }
 }

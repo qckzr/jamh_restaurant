@@ -27,6 +27,7 @@ namespace InventarioHilel.Vista
         {
             InitializeComponent();
             llenarListBoxProductos();
+            iniciarValores();
 
 
         }
@@ -120,6 +121,17 @@ namespace InventarioHilel.Vista
                 return false;
             }
             return true;
+        }
+
+        private void iniciarValores()
+        {
+            labelTipoUsuario.Content = Logica.getInstance().Usuario.Nick;
+            if (Logica.getInstance().Usuario.Admin == true)
+
+                image1.Source = new BitmapImage(new Uri("/InventarioHilel;component/Images/lock-icon.png", UriKind.RelativeOrAbsolute));
+            else
+                image1.Source = new BitmapImage(new Uri("/InventarioHilel;component/Images/User-yellow-icon.png", UriKind.RelativeOrAbsolute));
+
         }
 
     }
