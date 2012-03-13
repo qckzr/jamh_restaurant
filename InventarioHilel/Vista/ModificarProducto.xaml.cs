@@ -21,8 +21,7 @@ namespace InventarioHilel.Vista
         public ModificarProducto()
         {
             InitializeComponent();
-            WindowState = WindowState.Maximized;
-            WindowStyle = WindowStyle.None;
+            
 
         }
 

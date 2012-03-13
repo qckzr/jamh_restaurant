@@ -22,8 +22,7 @@ namespace InventarioHilel.Vista
         {
             InitializeComponent();
 
-            WindowState = WindowState.Maximized;
-            WindowStyle = WindowStyle.None;
+          
         }
 
         private void b_cerrarAdmin_Click(object sender, RoutedEventArgs e)
