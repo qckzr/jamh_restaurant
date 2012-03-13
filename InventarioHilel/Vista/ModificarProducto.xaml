@@ -1,4 +1,4 @@
-﻿<Window x:Class="InventarioHilel.Vista.ModificarProducto"
+﻿<Page x:Class="InventarioHilel.Vista.ModificarProducto"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="ModificarProducto" Height="768" Width="1388">
@@ -29,4 +29,4 @@
         <Label Content="Modificar:" FontSize="28" FontWeight="Normal" Height="58" HorizontalAlignment="Left" Margin="458,354,0,0" Name="label7" VerticalAlignment="Top" Width="141" />
         <Label Content="Modificar:" FontSize="28" FontWeight="Normal" Height="58" HorizontalAlignment="Left" Margin="458,475,0,0" Name="label8" VerticalAlignment="Top" Width="141" />
     </Grid>
-</Window>
+</Page>

@@ -1,4 +1,4 @@
-﻿<Window x:Class="InventarioHilel.Vista.EliminarProducto"
+﻿<Page x:Class="InventarioHilel.Vista.EliminarProducto"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="EliminarProducto" Height="768" Width="1388">
@@ -27,4 +27,4 @@
             <Label Content="Cantidad actual" FontSize="26" FontStyle="Italic" FontWeight="Normal" Height="58" HorizontalAlignment="Right" Margin="0,494,268,0" Name="label8" VerticalAlignment="Top" Width="424" />
         <Label Content="Información del Producto" FontSize="28" FontWeight="Bold" Height="47" HorizontalAlignment="Left" Margin="494,312,0,0" Name="label3" VerticalAlignment="Top" Width="347" />
     </Grid>
-</Window>
+</Page>

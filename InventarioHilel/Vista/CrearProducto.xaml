@@ -1,4 +1,4 @@
-﻿<Window x:Class="InventarioHilel.Vista.CrearProducto"
+﻿<Page x:Class="InventarioHilel.Vista.CrearProducto"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="CrearProducto" Height="768" Width="1388">
@@ -23,4 +23,4 @@
         <Label Content="Tipo de producto:" FontSize="28" FontWeight="Normal" Height="58" HorizontalAlignment="Left" Margin="398,296,0,0" Name="label4" VerticalAlignment="Top" Width="235" />
         <ComboBox Height="54" HorizontalAlignment="Right" Margin="0,296,349,0" Name="comboBox1" VerticalAlignment="Top" Width="358" />
     </Grid>
-</Window>
+</Page>
