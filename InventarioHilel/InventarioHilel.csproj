@@ -83,8 +83,17 @@
     <Compile Include="Vista\ConsultarInventario.xaml.cs">
       <DependentUpon>ConsultarInventario.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Vista\ConsultarProducto.xaml.cs">
+      <DependentUpon>ConsultarProducto.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\CrearProducto.xaml.cs">
+      <DependentUpon>CrearProducto.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Vista\DeducirInventario.xaml.cs">
       <DependentUpon>DeducirInventario.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\EliminarProducto.xaml.cs">
+      <DependentUpon>EliminarProducto.xaml</DependentUpon>
     </Compile>
     <Compile Include="Vista\EnvioInventario.xaml.cs">
       <DependentUpon>EnvioInventario.xaml</DependentUpon>
@@ -94,6 +103,9 @@
     </Compile>
     <Compile Include="Vista\MenuUsuario.xaml.cs">
       <DependentUpon>MenuUsuario.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\ModificarProducto.xaml.cs">
+      <DependentUpon>ModificarProducto.xaml</DependentUpon>
     </Compile>
     <Compile Include="Vista\Principal.xaml.cs">
       <DependentUpon>Principal.xaml</DependentUpon>
@@ -122,7 +134,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Vista\ConsultarProducto.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Vista\CrearProducto.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Vista\DeducirInventario.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Vista\EliminarProducto.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -148,6 +172,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Vista\MenuUsuario.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Vista\ModificarProducto.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
