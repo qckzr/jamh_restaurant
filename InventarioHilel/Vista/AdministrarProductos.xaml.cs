@@ -67,6 +67,11 @@ namespace InventarioHilel.Vista
             this.NavigationService.Navigate(new ConsultarProducto());
         }
 
+        private void b_crearProducto_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new CrearProducto());
+        }
+
        
     }
 }

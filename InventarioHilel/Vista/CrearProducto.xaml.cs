@@ -16,7 +16,7 @@ namespace InventarioHilel.Vista
     /// <summary>
     /// Interaction logic for CrearProducto.xaml
     /// </summary>
-    public partial class CrearProducto : Window
+    public partial class CrearProducto : Page
     {
         public CrearProducto()
         {

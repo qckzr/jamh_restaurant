@@ -16,7 +16,7 @@ namespace InventarioHilel.Vista
     /// <summary>
     /// Interaction logic for ConsultarProducto.xaml
     /// </summary>
-    public partial class ConsultarProducto : Window
+    public partial class ConsultarProducto : Page
     {
         public ConsultarProducto()
         {

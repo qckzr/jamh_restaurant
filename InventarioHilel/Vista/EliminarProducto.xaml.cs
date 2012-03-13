@@ -16,7 +16,7 @@ namespace InventarioHilel.Vista
     /// <summary>
     /// Interaction logic for EliminarProducto.xaml
     /// </summary>
-    public partial class EliminarProducto : Window
+    public partial class EliminarProducto : Page
     {
         public EliminarProducto()
         {
