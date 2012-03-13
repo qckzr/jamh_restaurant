@@ -76,34 +76,35 @@ namespace InventarioHilel.Controlador
             return true;
         }
 
-        public DataTable consultarProducto(int idProducto)
+        public DataTable consultarProducto(String nombreProducto)
         {
-            return db.consultar("select * from producto where idproducto=" + idProducto);
+            return db.consultar("select * from productos where nombre='" + nombreProducto+"'");
         }
 
         public Boolean crearProducto(String nombre, String tipo, int cantidadMinima)
         {
-            db.hacerQuery("insert into productos (nombre,tipo,cantidadminima) values ('"+nombre+"','"+tipo+"',"+cantidadMinima+"");
+            db.hacerQuery("insert into productos (nombre,tipo,cantidad_minima) values ('"+nombre+"','"+tipo+"',"+cantidadMinima+")");
             return true;
 
         }
 
-        public Boolean modificarProducto(int idProducto,String nombre, String tipo, int cantidadMinima)
+        public Boolean modificarProducto(int idProducto,String nombre, String tipo, String cantidadMinima)
         {
-            if (nombre!=null)
-                db.hacerQuery("update productos set nombre='"+nombre+"' where idproducto="+idProducto);
-            if (tipo!=null)
-                db.hacerQuery("update productos set tipo='" + tipo + "' where idproducto=" + idProducto);
-            if (cantidadMinima>0) //validar esto en la interfaz jeje
-                db.hacerQuery("update productos set cantidadminima=" + cantidadMinima + " where idproducto=" + idProducto);
+            if (nombre.Length!=0)
+                db.hacerQuery("update productos set nombre ='"+nombre+"' where id="+idProducto);
+            if (tipo.Length!=0)
+                db.hacerQuery("update productos set tipo ='" + tipo + "' where id=" + idProducto);
+            if (cantidadMinima.Length!=0) //validar esto en la interfaz jeje
+                if (Convert.ToInt32(cantidadMinima)>0)
+                    db.hacerQuery("update productos set cantidad_minima =" + cantidadMinima + " where id=" + idProducto);
             return true;
 
         }
 
-        public Boolean eliminarProducto(int idProducto)
+        public Boolean eliminarProducto(String nombreProducto)
         {
-            db.hacerQuery("delete from fecha_productos where id_producto=" + idProducto);
-            db.hacerQuery("delete from productos where idproducto=" + idProducto);
+      //      db.hacerQuery("delete from fecha_productos where id_producto=" + idProducto);
+            db.hacerQuery("delete from productos where nombre='" + nombreProducto+"'");
             return true;
  
         }

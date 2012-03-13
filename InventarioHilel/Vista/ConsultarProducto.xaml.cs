@@ -10,6 +10,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Data;
+using Logica = InventarioHilel.Controlador.Logica;
 
 namespace InventarioHilel.Vista
 {
@@ -21,6 +23,8 @@ namespace InventarioHilel.Vista
         public ConsultarProducto()
         {
             InitializeComponent();
+            llenarListBoxProductos();
+            iniciarValores();
 
           
         }
@@ -29,6 +33,40 @@ namespace InventarioHilel.Vista
         {
 
             Application.Current.Shutdown();
+        }
+
+        private void llenarListBoxProductos()
+        {
+            DataTable dt = Logica.getInstance().getDb().consultar("select nombre from productos order by nombre");
+            foreach (DataRow dr in dt.Rows)
+            {
+                lb_Producto.Items.Add(dr[0].ToString());
+
+            }
+        }
+
+        private void lb_Producto_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            DataRow dr = Logica.getInstance().consultarProducto(lb_Producto.SelectedItem.ToString()).Rows[0];
+            l_nombreProducto.Content = dr[1].ToString();
+            l_cantidad.Content = dr[3].ToString();
+            l_tipo.Content = dr[2].ToString();
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new AdministrarProductos());
+        }
+
+        private void iniciarValores()
+        {
+            labelTipoUsuario.Content = Logica.getInstance().Usuario.Nick;
+            if (Logica.getInstance().Usuario.Admin == true)
+
+                image1.Source = new BitmapImage(new Uri("/InventarioHilel;component/Images/lock-icon.png", UriKind.RelativeOrAbsolute));
+            else
+                image1.Source = new BitmapImage(new Uri("/InventarioHilel;component/Images/User-yellow-icon.png", UriKind.RelativeOrAbsolute));
+
         }
     }
 }
